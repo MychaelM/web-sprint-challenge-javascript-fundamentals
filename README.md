@@ -26,14 +26,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-
+    .map returns a new array and .forEach returns undefined.
+    .map is chainable with other methods, and .forEach is not.
 2. Explain the difference between a callback and a higher order function.
-
+    Higher-order function is a function that takes in a function as an argument, or returns a function. A callback is a function that is passed into another function as an argument, or passed into the higher-order function as an argument.
 3. What is closure?
-
+    A closure is where an inner function reaches out to an outer scope, that encloses the inner function, to access a variable. This allows a function to have some persistent data b/n each time the function is called.
 4. Describe the four rules of the 'this' keyword.
-
+	"This" refers to the the object that "this" is pointing to. This allows you to reference an object without having to reference the object name. There are 4 principles that determine how "this" is bound and referenced, Global binding, Implicit binding, new binding, and explicit binding.
+    a. In global binding "this" is bound to the document/window
+    b. Implicit binding is where "this" is bound to an object that precedes the dot that calls a function. Ex. obj.function()
+    c. new binding references "this" being bound to a new instance of an obj using the "new" keyword
+    d. explicit binding is where "this" is bound using .call, .apply, or .bind methods to bind "this" to a specific object 
 5. Why do we need super() in an extended class?
+    The super() method allows us to call the parent classes constructor method to gain access to the parents properties and methods.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
